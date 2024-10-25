@@ -16,13 +16,16 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "axios": "^0.24.0" // Optional: for making HTTP requests
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.{js,jsx}", // Optional: for linting
+    "format": "prettier --write src/**/*.{js,jsx,json}" // Optional: for formatting
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0", // Optional: if not already installed
+    "prettier": "^2.5.1" // Optional: for code formatting
   }
 }
